@@ -1,0 +1,156 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91A2191B-6420-4F7E-83EF-2C01C0FE621D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Data.SqlClient</RootNamespace>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>681d0866-0b50-4201-826e-837b44256b0d</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>System.Data.SqlClient</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <NativePlatformName>CHSINT SDK For WinCE 6.0</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADP.cs" />
+    <Compile Include="CommandBuilder.cs" />
+    <Compile Include="CommandBuilderBehavior.cs" />
+    <Compile Include="ConStringUtil.cs" />
+    <Compile Include="DbNetLib.cs" />
+    <Compile Include="DBSchemaRow.cs" />
+    <Compile Include="DBSchemaTable.cs" />
+    <Compile Include="FieldNameLookup.cs" />
+    <Compile Include="MetaBigInt.cs" />
+    <Compile Include="MetaBinary.cs" />
+    <Compile Include="MetaBit.cs" />
+    <Compile Include="MetaChar.cs" />
+    <Compile Include="MetaDateTime.cs" />
+    <Compile Include="MetaDecimal.cs" />
+    <Compile Include="MetaFloat.cs" />
+    <Compile Include="MetaImage.cs" />
+    <Compile Include="MetaInt.cs" />
+    <Compile Include="MetaMoney.cs" />
+    <Compile Include="MetaNChar.cs" />
+    <Compile Include="MetaNText.cs" />
+    <Compile Include="MetaNVarChar.cs" />
+    <Compile Include="MetaReal.cs" />
+    <Compile Include="MetaSmallDateTime.cs" />
+    <Compile Include="MetaSmallInt.cs" />
+    <Compile Include="MetaSmallMoney.cs" />
+    <Compile Include="MetaSmallVarBinary.cs" />
+    <Compile Include="MetaText.cs" />
+    <Compile Include="MetaTimestamp.cs" />
+    <Compile Include="MetaTinyInt.cs" />
+    <Compile Include="MetaType.cs" />
+    <Compile Include="MetaTypeName.cs" />
+    <Compile Include="MetaUniqueId.cs" />
+    <Compile Include="MetaVarBinary.cs" />
+    <Compile Include="MetaVarChar.cs" />
+    <Compile Include="MetaVariant.cs" />
+    <Compile Include="ODB.cs" />
+    <Compile Include="PrivateImplementationDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Res.cs" />
+    <Compile Include="RunBehavior.cs" />
+    <Compile Include="SQL.cs" />
+    <Compile Include="SqlCollation.cs" />
+    <Compile Include="SqlCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlCommandBuilder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlDataAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SqlDataReader.cs" />
+    <Compile Include="SqlEnvChange.cs" />
+    <Compile Include="SqlError.cs" />
+    <Compile Include="SqlErrorCollection.cs" />
+    <Compile Include="SqlException.cs" />
+    <Compile Include="SqlInfoMessageEventArgs.cs" />
+    <Compile Include="SqlInfoMessageEventHandler.cs" />
+    <Compile Include="SqlInternalConnection.cs" />
+    <Compile Include="SqlLogin.cs" />
+    <Compile Include="SqlLoginAck.cs" />
+    <Compile Include="SQLMessage.cs" />
+    <Compile Include="SqlMetaData.cs" />
+    <Compile Include="SqlParameter.cs" />
+    <Compile Include="SqlParameterCollection.cs" />
+    <Compile Include="SqlReturnValue.cs" />
+    <Compile Include="SqlRowUpdatedEventArgs.cs" />
+    <Compile Include="SqlRowUpdatedEventHandler.cs" />
+    <Compile Include="SqlRowUpdatingEventArgs.cs" />
+    <Compile Include="SqlRowUpdatingEventHandler.cs" />
+    <Compile Include="SqlStream.cs" />
+    <Compile Include="SqlTransaction.cs" />
+    <Compile Include="TdsDateTime.cs" />
+    <Compile Include="TdsEnums.cs" />
+    <Compile Include="TdsParser.cs" />
+    <Compile Include="TdsParserState.cs" />
+    <Compile Include="TdsParserWaitHandle.cs" />
+    <Compile Include="_SqlMetaData.cs" />
+    <Compile Include="_SqlRPC.cs" />
+    <Compile Include="_ValueException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
